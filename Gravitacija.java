@@ -21,4 +21,8 @@ public class Gravitacija{
     public static void izpisiGravPospesek(int v){
         System.out.println((G * M) / Math.pow(r + v, 2));
     }
+
+    public static void abc(){
+        return;
+    }
 }
