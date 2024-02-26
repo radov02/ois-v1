@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Gravitacija{
 
     private static final double G;
@@ -10,8 +12,12 @@ public class Gravitacija{
     }
 
     public static void main(String[] args){
-        System.out.println("OIS JE zakon!");
-        //System.out.println(gravPospesek(0));
+        Scanner sc = new Scanner(System.in);
+
+        int nadmorska = sc.nextInt();
+        izpisiGravPospesek(nadmorska);
+
+        sc.close();
     }
 
     public static double gravPospesek(int v){
@@ -19,10 +25,6 @@ public class Gravitacija{
     }
 
     public static void izpisiGravPospesek(int v){
-        System.out.println((G * M) / Math.pow(r + v, 2));
-    }
-
-    public static void abc(){
-        return;
+        System.out.println(gravPospesek(v));
     }
 }
