@@ -10,11 +10,15 @@ public class Gravitacija{
     }
 
     public static void main(String[] args){
-        System.out.println("OIS je zakon!");
+        System.out.println("OIS JE zakon!");
         //System.out.println(gravPospesek(0));
     }
 
     public static double gravPospesek(int v){
         return (G * M) / Math.pow(r + v, 2);
+    }
+
+    public static void izpisiGravPospesek(int v){
+        System.out.println((G * M) / Math.pow(r + v, 2));
     }
 }
